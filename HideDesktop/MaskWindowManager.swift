@@ -5,14 +5,19 @@ import os.log
 
 class MaskWindowManager {
     private let logger = Logger(subsystem: "com.liuxl.HideDesktop", category: "MaskWindowManager")
-    private var maskWindow: NSWindow?
+    private var _maskWindow: NSWindow?
+    
+    // 提供公共访问接口
+    var maskWindow: NSWindow? {
+        return _maskWindow
+    }
 
     func toggleMask() {
-        if maskWindow == nil {
+        if _maskWindow == nil {
             createMaskWindow()
         } else {
-            maskWindow?.orderOut(nil)
-            maskWindow = nil
+            _maskWindow?.orderOut(nil)
+            _maskWindow = nil
         }
     }
 
@@ -218,7 +223,7 @@ class MaskWindowManager {
         newWindow.isReleasedWhenClosed = false
         newWindow.orderFrontRegardless()
         
-        maskWindow = newWindow
+        _maskWindow = newWindow
         logger.info("遮罩窗口创建并显示成功")
     }
 }
