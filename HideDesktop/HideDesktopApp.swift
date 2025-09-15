@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AppKit
+import Combine
 
 @main
 struct HideDesktopApp: App {
@@ -23,6 +24,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
     var maskWindowManager: MaskWindowManager?
     var toggleMenuItem: NSMenuItem?
+    var languageMenuItem: NSMenuItem?
+    private var cancellables = Set<AnyCancellable>()
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         // 设置应用为代理应用，不显示在 Dock 中
@@ -47,25 +50,52 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func createMenu() {
         let menu = NSMenu()
         
-        toggleMenuItem = NSMenuItem(title: "隐藏桌面图标", action: #selector(toggleDesktop), keyEquivalent: "")
+        // 隐藏桌面图标菜单项
+        toggleMenuItem = NSMenuItem(title: LocalizationManager.shared.string(forKey: "hide_desktop"), action: #selector(toggleDesktop), keyEquivalent: "")
         toggleMenuItem?.target = self
         
         // 为菜单项设置固定宽度，确保勾选标记出现时文本不会偏移
         // 在文本前面添加空格来为勾选标记预留空间
-        let attributedTitle = NSAttributedString(string: "    隐藏桌面图标", attributes: [
-            .font: NSFont.systemFont(ofSize: 13)
-        ])
-        toggleMenuItem?.attributedTitle = attributedTitle
+        updateToggleMenuItemTitle()
         
         menu.addItem(toggleMenuItem!)
         
         menu.addItem(NSMenuItem.separator())
         
-        // 为退出菜单项也添加相同的空格，保持文本对齐
-        let quitItem = NSMenuItem(title: "退出", action: #selector(quitApp), keyEquivalent: "q")
+        // 语言切换菜单项
+        languageMenuItem = NSMenuItem(title: LocalizationManager.shared.string(forKey: "language"), action: nil, keyEquivalent: "")
+        languageMenuItem?.target = self
+        
+        let languageAttributedTitle = NSAttributedString(string: "    " + LocalizationManager.shared.string(forKey: "language"), attributes: [
+            .font: NSFont.systemFont(ofSize: 13)
+        ])
+        languageMenuItem?.attributedTitle = languageAttributedTitle
+        
+        // 创建语言子菜单
+        let languageSubMenu = NSMenu()
+        
+        // 中文选项
+        let chineseItem = NSMenuItem(title: LocalizationManager.shared.string(forKey: "chinese"), action: #selector(switchToChinese), keyEquivalent: "")
+        chineseItem.target = self
+        chineseItem.state = LocalizationManager.shared.currentLanguage == "zh" ? .on : .off
+        languageSubMenu.addItem(chineseItem)
+        
+        // 英文选项
+        let englishItem = NSMenuItem(title: LocalizationManager.shared.string(forKey: "english"), action: #selector(switchToEnglish), keyEquivalent: "")
+        englishItem.target = self
+        englishItem.state = LocalizationManager.shared.currentLanguage == "en" ? .on : .off
+        languageSubMenu.addItem(englishItem)
+        
+        languageMenuItem?.submenu = languageSubMenu
+        menu.addItem(languageMenuItem!)
+        
+        menu.addItem(NSMenuItem.separator())
+        
+        // 退出菜单项
+        let quitItem = NSMenuItem(title: LocalizationManager.shared.string(forKey: "quit"), action: #selector(quitApp), keyEquivalent: "q")
         quitItem.target = self
         
-        let quitAttributedTitle = NSAttributedString(string: "    退出", attributes: [
+        let quitAttributedTitle = NSAttributedString(string: "    " + LocalizationManager.shared.string(forKey: "quit"), attributes: [
             .font: NSFont.systemFont(ofSize: 13)
         ])
         quitItem.attributedTitle = quitAttributedTitle
@@ -73,9 +103,76 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(quitItem)
         
         // 设置菜单最小宽度，确保勾选状态变化时宽度不变
-        menu.minimumWidth = 180
+        menu.minimumWidth = 200
         
         statusItem?.menu = menu
+        
+        // 监听语言变化
+        LocalizationManager.shared.$currentLanguage
+            .sink { [weak self] _ in
+                self?.updateMenuLanguage()
+            }
+            .store(in: &cancellables)
+    }
+    
+    private func updateToggleMenuItemTitle() {
+        let title = "    " + LocalizationManager.shared.string(forKey: "hide_desktop")
+        let attributedTitle = NSAttributedString(string: title, attributes: [
+            .font: NSFont.systemFont(ofSize: 13)
+        ])
+        toggleMenuItem?.attributedTitle = attributedTitle
+    }
+    
+    private func updateMenuLanguage() {
+        // 更新隐藏桌面图标菜单项
+        updateToggleMenuItemTitle()
+        
+        // 更新语言菜单项
+        let languageTitle = "    " + LocalizationManager.shared.string(forKey: "language")
+        let languageAttributedTitle = NSAttributedString(string: languageTitle, attributes: [
+            .font: NSFont.systemFont(ofSize: 13)
+        ])
+        languageMenuItem?.attributedTitle = languageAttributedTitle
+        
+        // 更新语言子菜单
+        if let languageSubMenu = languageMenuItem?.submenu {
+            let chineseItem = languageSubMenu.item(at: 0)
+            let englishItem = languageSubMenu.item(at: 1)
+            
+            // 更新中文选项
+            chineseItem?.title = LocalizationManager.shared.string(forKey: "chinese")
+            chineseItem?.state = LocalizationManager.shared.currentLanguage == "zh" ? .on : .off
+            
+            // 更新英文选项
+            englishItem?.title = LocalizationManager.shared.string(forKey: "english")
+            englishItem?.state = LocalizationManager.shared.currentLanguage == "en" ? .on : .off
+        }
+        
+        // 更新退出菜单项
+        if let quitItem = statusItem?.menu?.items.last {
+            let quitTitle = "    " + LocalizationManager.shared.string(forKey: "quit")
+            let quitAttributedTitle = NSAttributedString(string: quitTitle, attributes: [
+                .font: NSFont.systemFont(ofSize: 13)
+            ])
+            quitItem.attributedTitle = quitAttributedTitle
+        }
+        
+        // 强制重新创建菜单以确保状态更新
+        DispatchQueue.main.async {
+            let currentMenu = self.statusItem?.menu
+            self.statusItem?.menu = nil
+            DispatchQueue.main.async {
+                self.statusItem?.menu = currentMenu
+            }
+        }
+    }
+    
+    @objc private func switchToChinese() {
+        LocalizationManager.shared.currentLanguage = "zh"
+    }
+    
+    @objc private func switchToEnglish() {
+        LocalizationManager.shared.currentLanguage = "en"
     }
     
     @objc func toggleDesktop() {
