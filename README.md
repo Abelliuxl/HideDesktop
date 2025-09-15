@@ -5,6 +5,10 @@ A clean macOS desktop icon hiding tool to help you get a more refreshing desktop
 
 ![App Icon](HideDesktop/Assets.xcassets/AppIcon.appiconset/1024.png)
 
+## Demo / 演示
+
+![HideDesktop Demo](assets/hide-desktop-demo.gif)
+
 ## Features / 功能特性
 
 - 🖥️ **One-click hide/show desktop icons** - Quickly toggle desktop icon display status / **一键隐藏/显示桌面图标** - 快速切换桌面图标的显示状态
