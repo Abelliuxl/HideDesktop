@@ -1,5 +1,5 @@
-# Xcode
-#
+Xcode
+
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
@@ -92,9 +92,10 @@ Temporary Items
 debug_*.swift
 test_*.swift
 
-# Reports
+# Markdown files - allow specific ones
 *.md
 !README.md
+!LICENSE
 
 # Temporary files
 *.tmp
