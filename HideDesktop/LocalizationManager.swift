@@ -40,7 +40,8 @@ class LocalizationManager: ObservableObject {
                 "quit": "退出",
                 "language": "语言",
                 "chinese": "中文",
-                "english": "English"
+                "english": "English",
+                "startup": "开机启动"
             ]
         case "en":
             localizedStrings = [
@@ -48,7 +49,8 @@ class LocalizationManager: ObservableObject {
                 "quit": "Quit",
                 "language": "Language",
                 "chinese": "中文",
-                "english": "English"
+                "english": "English",
+                "startup": "Start at Login"
             ]
         default:
             localizedStrings = [
@@ -56,7 +58,8 @@ class LocalizationManager: ObservableObject {
                 "quit": "Quit",
                 "language": "Language",
                 "chinese": "中文",
-                "english": "English"
+                "english": "English",
+                "startup": "Start at Login"
             ]
         }
     }
