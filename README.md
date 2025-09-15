@@ -3,8 +3,6 @@
 A clean macOS desktop icon hiding tool to help you get a more refreshing desktop experience.
 一个简洁的 macOS 桌面图标隐藏工具，帮助您获得更清爽的桌面体验。
 
-![App Icon](HideDesktop/Assets.xcassets/AppIcon.appiconset/1024.png)
-
 ## Demo / 演示
 
 ![HideDesktop Demo](assets/hide-desktop-demo.gif)
