@@ -4,7 +4,7 @@ import CoreGraphics
 import os.log
 
 class MaskWindowManager {
-    private let logger = Logger(subsystem: "com.liuxl.HideDesktop", category: "MaskWindowManager")
+    private let logger = Logger(subsystem: "com.liuxl.HideDesktopIcon", category: "MaskWindowManager")
     private var _maskWindow: NSWindow?
     
     // 提供公共访问接口

@@ -1,6 +1,6 @@
 //
-//  HideDesktopApp.swift
-//  HideDesktop
+//  HideDesktopIconApp.swift
+//  HideDesktopIcon
 //
 //  Created by liuxl on 2025/9/15.
 //
@@ -11,7 +11,7 @@ import Combine
 import ServiceManagement
 
 @main
-struct HideDesktopApp: App {
+struct HideDesktopIconApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {

@@ -1,11 +1,11 @@
-# HideDesktop / 桌面图标隐藏工具
+# HideDesktopIcon / 桌面图标隐藏工具
 
 A clean macOS desktop icon hiding tool to help you get a more refreshing desktop experience.
 一个简洁的 macOS 桌面图标隐藏工具，帮助您获得更清爽的桌面体验。
 
 ## Demo / 演示
 
-![HideDesktop Demo](assets/hide-desktop-demo.gif)
+![HideDesktopIcon Demo](assets/hide-desktop-demo.gif)
 
 ## Features / 功能特性
 
@@ -27,25 +27,25 @@ A clean macOS desktop icon hiding tool to help you get a more refreshing desktop
 
 1. Clone this repository / 克隆此仓库：
    ```bash
-   git clone https://github.com/Abelliuxl/HideDesktop.git
+   git clone https://github.com/Abelliuxl/HideDesktopIcon.git
    ```
 
 2. Open the project with Xcode / 使用 Xcode 打开项目：
    ```bash
-   cd HideDesktop
-   open HideDesktop.xcodeproj
+   cd HideDesktopIcon
+   open HideDesktopIcon.xcodeproj
    ```
 
 3. Select the target device in Xcode, then click the Run button to build the project / 在 Xcode 中选择目标设备，然后点击运行按钮构建项目。
 
-4. After building is complete, you can find `HideDesktop.app` in the `build/Build/Products/Release/` directory / 构建完成后，您可以在 `build/Build/Products/Release/` 目录下找到 `HideDesktop.app`。
+4. After building is complete, you can find `HideDesktopIcon.app` in the `build/Build/Products/Release/` directory / 构建完成后，您可以在 `build/Build/Products/Release/` 目录下找到 `HideDesktopIcon.app`。
 
 5. Drag the app to the `Applications` folder / 将应用拖拽到 `应用程序` 文件夹中。
 
 ## Usage / 使用方法
 
-1. Launch HideDesktop app / 启动 HideDesktop 应用
-2. Click the HideDesktop icon in the menu bar / 点击菜单栏中的 HideDesktop 图标
+1. Launch HideDesktopIcon app / 启动 HideDesktopIcon 应用
+2. Click the HideDesktopIcon icon in the menu bar / 点击菜单栏中的 HideDesktopIcon 图标
 3. Select the corresponding function / 选择相应功能：
    - **Hide desktop icons** - Immediately hide all desktop icons / **隐藏桌面图标** - 立即隐藏所有桌面图标
    - **Show desktop icons** - Restore display of all desktop icons / **显示桌面图标** - 恢复显示所有桌面图标
@@ -95,8 +95,8 @@ Issues and Pull Requests are welcome! / 欢迎提交 Issue 和 Pull Request！
 
 ## Contact / 联系方式
 
-- Project URL / 项目地址：[https://github.com/Abelliuxl/HideDesktop](https://github.com/Abelliuxl/HideDesktop)
-- Issue feedback / 问题反馈：[GitHub Issues](https://github.com/Abelliuxl/HideDesktop/issues)
+- Project URL / 项目地址：[https://github.com/Abelliuxl/HideDesktopIcon](https://github.com/Abelliuxl/HideDesktopIcon)
+- Issue feedback / 问题反馈：[GitHub Issues](https://github.com/Abelliuxl/HideDesktopIcon/issues)
 
 ## Disclaimer / 免责声明
 

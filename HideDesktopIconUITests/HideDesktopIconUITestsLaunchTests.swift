@@ -1,13 +1,13 @@
 //
-//  HideDesktopUITestsLaunchTests.swift
-//  HideDesktopUITests
+//  HideDesktopIconUITestsLaunchTests.swift
+//  HideDesktopIconUITests
 //
 //  Created by liuxl on 2025/9/15.
 //
 
 import XCTest
 
-final class HideDesktopUITestsLaunchTests: XCTestCase {
+final class HideDesktopIconUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

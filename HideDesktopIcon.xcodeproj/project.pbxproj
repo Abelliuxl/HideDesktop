@@ -12,37 +12,37 @@
 			containerPortal = B5CE0FD82E781C66004D809E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B5CE0FDF2E781C66004D809E;
-			remoteInfo = HideDesktop;
+			remoteInfo = HideDesktopIcon;
 		};
 		B5CE0FF92E781C68004D809E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5CE0FD82E781C66004D809E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B5CE0FDF2E781C66004D809E;
-			remoteInfo = HideDesktop;
+			remoteInfo = HideDesktopIcon;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B5CE0FE02E781C66004D809E /* HideDesktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HideDesktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5CE0FEE2E781C68004D809E /* HideDesktopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HideDesktopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5CE0FF82E781C68004D809E /* HideDesktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HideDesktopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CE0FE02E781C66004D809E /* HideDesktopIconIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HideDesktopIconIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CE0FEE2E781C68004D809E /* HideDesktopIconIconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HideDesktopIconIconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CE0FF82E781C68004D809E /* HideDesktopIconIconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HideDesktopIconIconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B5CE0FE22E781C66004D809E /* HideDesktop */ = {
+		B5CE0FE22E781C66004D809E /* HideDesktopIcon */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HideDesktop;
+			path = HideDesktopIcon;
 			sourceTree = "<group>";
 		};
-		B5CE0FF12E781C68004D809E /* HideDesktopTests */ = {
+		B5CE0FF12E781C68004D809E /* HideDesktopIconTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HideDesktopTests;
+			path = HideDesktopIconTests;
 			sourceTree = "<group>";
 		};
-		B5CE0FFB2E781C68004D809E /* HideDesktopUITests */ = {
+		B5CE0FFB2E781C68004D809E /* HideDesktopIconUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HideDesktopUITests;
+			path = HideDesktopIconUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		B5CE0FD72E781C66004D809E = {
 			isa = PBXGroup;
 			children = (
-				B5CE0FE22E781C66004D809E /* HideDesktop */,
-				B5CE0FF12E781C68004D809E /* HideDesktopTests */,
-				B5CE0FFB2E781C68004D809E /* HideDesktopUITests */,
+				B5CE0FE22E781C66004D809E /* HideDesktopIcon */,
+				B5CE0FF12E781C68004D809E /* HideDesktopIconTests */,
+				B5CE0FFB2E781C68004D809E /* HideDesktopIconUITests */,
 				B5CE0FE12E781C66004D809E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		B5CE0FE12E781C66004D809E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5CE0FE02E781C66004D809E /* HideDesktop.app */,
-				B5CE0FEE2E781C68004D809E /* HideDesktopTests.xctest */,
-				B5CE0FF82E781C68004D809E /* HideDesktopUITests.xctest */,
+				B5CE0FE02E781C66004D809E /* HideDesktopIcon.app */,
+				B5CE0FEE2E781C68004D809E /* HideDesktopIconTests.xctest */,
+				B5CE0FF82E781C68004D809E /* HideDesktopIconUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5CE0FDF2E781C66004D809E /* HideDesktop */ = {
+		B5CE0FDF2E781C66004D809E /* HideDesktopIcon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5CE10022E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktop" */;
+			buildConfigurationList = B5CE10022E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopIcon" */;
 			buildPhases = (
 				B5CE0FDC2E781C66004D809E /* Sources */,
 				B5CE0FDD2E781C66004D809E /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B5CE0FE22E781C66004D809E /* HideDesktop */,
+				B5CE0FE22E781C66004D809E /* HideDesktopIcon */,
 			);
-			name = HideDesktop;
+			name = HideDesktopIcon;
 			packageProductDependencies = (
 			);
-			productName = HideDesktop;
-			productReference = B5CE0FE02E781C66004D809E /* HideDesktop.app */;
+			productName = HideDesktopIcon;
+			productReference = B5CE0FE02E781C66004D809E /* HideDesktopIcon.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5CE0FED2E781C68004D809E /* HideDesktopTests */ = {
+		B5CE0FED2E781C68004D809E /* HideDesktopIconTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5CE10052E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopTests" */;
+			buildConfigurationList = B5CE10052E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopIconTests" */;
 			buildPhases = (
 				B5CE0FEA2E781C68004D809E /* Sources */,
 				B5CE0FEB2E781C68004D809E /* Frameworks */,
@@ -131,18 +131,18 @@
 				B5CE0FF02E781C68004D809E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B5CE0FF12E781C68004D809E /* HideDesktopTests */,
+				B5CE0FF12E781C68004D809E /* HideDesktopIconTests */,
 			);
-			name = HideDesktopTests;
+			name = HideDesktopIconTests;
 			packageProductDependencies = (
 			);
-			productName = HideDesktopTests;
-			productReference = B5CE0FEE2E781C68004D809E /* HideDesktopTests.xctest */;
+			productName = HideDesktopIconTests;
+			productReference = B5CE0FEE2E781C68004D809E /* HideDesktopIconTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B5CE0FF72E781C68004D809E /* HideDesktopUITests */ = {
+		B5CE0FF72E781C68004D809E /* HideDesktopIconUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5CE10082E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopUITests" */;
+			buildConfigurationList = B5CE10082E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopIconUITests" */;
 			buildPhases = (
 				B5CE0FF42E781C68004D809E /* Sources */,
 				B5CE0FF52E781C68004D809E /* Frameworks */,
@@ -154,13 +154,13 @@
 				B5CE0FFA2E781C68004D809E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B5CE0FFB2E781C68004D809E /* HideDesktopUITests */,
+				B5CE0FFB2E781C68004D809E /* HideDesktopIconUITests */,
 			);
-			name = HideDesktopUITests;
+			name = HideDesktopIconUITests;
 			packageProductDependencies = (
 			);
-			productName = HideDesktopUITests;
-			productReference = B5CE0FF82E781C68004D809E /* HideDesktopUITests.xctest */;
+			productName = HideDesktopIconUITests;
+			productReference = B5CE0FF82E781C68004D809E /* HideDesktopIconUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5CE0FDB2E781C66004D809E /* Build configuration list for PBXProject "HideDesktop" */;
+			buildConfigurationList = B5CE0FDB2E781C66004D809E /* Build configuration list for PBXProject "HideDesktopIcon" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5CE0FDF2E781C66004D809E /* HideDesktop */,
-				B5CE0FED2E781C68004D809E /* HideDesktopTests */,
-				B5CE0FF72E781C68004D809E /* HideDesktopUITests */,
+				B5CE0FDF2E781C66004D809E /* HideDesktopIcon */,
+				B5CE0FED2E781C68004D809E /* HideDesktopIconTests */,
+				B5CE0FF72E781C68004D809E /* HideDesktopIconUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		B5CE0FF02E781C68004D809E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5CE0FDF2E781C66004D809E /* HideDesktop */;
+			target = B5CE0FDF2E781C66004D809E /* HideDesktopIcon */;
 			targetProxy = B5CE0FEF2E781C68004D809E /* PBXContainerItemProxy */;
 		};
 		B5CE0FFA2E781C68004D809E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5CE0FDF2E781C66004D809E /* HideDesktop */;
+			target = B5CE0FDF2E781C66004D809E /* HideDesktopIcon */;
 			targetProxy = B5CE0FF92E781C68004D809E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -392,7 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = HideDesktop/HideDesktop.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HideDesktopIcon/HideDesktopIcon.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -404,7 +404,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktop;
+				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopIcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -417,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = HideDesktop/HideDesktop.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HideDesktopIcon/HideDesktopIcon.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -429,7 +429,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktop;
+				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopIcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -446,11 +446,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopIconTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HideDesktop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HideDesktop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HideDesktopIcon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HideDesktopIcon";
 			};
 			name = Debug;
 		};
@@ -463,11 +463,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopIconTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HideDesktop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HideDesktop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HideDesktopIcon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HideDesktopIcon";
 			};
 			name = Release;
 		};
@@ -478,11 +478,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopIconUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = HideDesktop;
+				TEST_TARGET_NAME = HideDesktopIcon;
 			};
 			name = Debug;
 		};
@@ -493,18 +493,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = Liuxl.inc.HideDesktopIconUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = HideDesktop;
+				TEST_TARGET_NAME = HideDesktopIcon;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5CE0FDB2E781C66004D809E /* Build configuration list for PBXProject "HideDesktop" */ = {
+		B5CE0FDB2E781C66004D809E /* Build configuration list for PBXProject "HideDesktopIcon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5CE10002E781C68004D809E /* Debug */,
@@ -513,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5CE10022E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktop" */ = {
+		B5CE10022E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopIcon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5CE10032E781C68004D809E /* Debug */,
@@ -522,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5CE10052E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopTests" */ = {
+		B5CE10052E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopIconTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5CE10062E781C68004D809E /* Debug */,
@@ -531,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5CE10082E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopUITests" */ = {
+		B5CE10082E781C68004D809E /* Build configuration list for PBXNativeTarget "HideDesktopIconUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5CE10092E781C68004D809E /* Debug */,
