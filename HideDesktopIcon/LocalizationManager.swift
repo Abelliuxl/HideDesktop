@@ -10,9 +10,9 @@ import SwiftUI
 
 class LocalizationManager: ObservableObject {
     @Published var currentLanguage: String = "zh" {
-        didSet {
-            UserDefaults.standard.set(currentLanguage, forKey: "AppLanguage")
-            updateStrings()
+        willSet {
+            UserDefaults.standard.set(newValue, forKey: "AppLanguage")
+            updateStrings(for: newValue)
         }
     }
     
@@ -29,11 +29,11 @@ class LocalizationManager: ObservableObject {
             let systemLanguage = Locale.current.languageCode ?? "en"
             currentLanguage = (systemLanguage == "zh") ? "zh" : "en"
         }
-        updateStrings()
+        updateStrings(for: currentLanguage)
     }
     
-    private func updateStrings() {
-        switch currentLanguage {
+    private func updateStrings(for language: String) {
+        switch language {
         case "zh":
             localizedStrings = [
                 "hide_desktop": "隐藏桌面图标",
